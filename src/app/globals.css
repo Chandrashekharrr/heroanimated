@@ -140,3 +140,55 @@ section{
     pointer-events: none;
 }
 
+.hero-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+
+}
+
+
+.hero-footer{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 200px;
+    color: #fff;
+    will-change: transform, filter, opacity;   
+    /* ///////  may get error here  */
+
+}
+
+
+.studio{
+    margin-top: 300svh;
+}
+
+@media (max-width: 1000px) {
+    .logo{
+        transform: translateY(0px) scale(2);
+    }
+
+    .hero-header{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .hero-footer{
+        width: 200px;
+        right: unset;
+        left: 50%;
+        bottom: 20svh;
+        text-align: center;
+        transform:translateX(-50%);
+    }
+}
+
