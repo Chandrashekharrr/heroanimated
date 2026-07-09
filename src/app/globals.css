@@ -119,6 +119,7 @@ section{
     transform-origin: bottom left;
     will-change: transform;
     z-index: 10;
+    
 }
 
 .hero-inner{
@@ -170,6 +171,10 @@ section{
 
 .studio{
     margin-top: 300svh;
+}
+
+.words{
+    overflow:hidden;
 }
 
 @media (max-width: 1000px) {
